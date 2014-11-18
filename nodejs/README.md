@@ -28,3 +28,5 @@ Once the muzzley Node.js lib is part of the Intel Dev Kit repository, run the fo
 Enter the folder `nodejs` and type the following command
 
     node index.js
+
+The `activityId` will be printed to your console. Using the muzzley app in your Android, iOS or WP8 smartphone, press the menu (three vertical dots) button in the top right and choose "Muzzley Key".  Enter the generated `activityId` and your smartphone should become a switch interface. Pressing the switch should turn your board's LED on and off.
