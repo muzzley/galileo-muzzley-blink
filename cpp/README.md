@@ -13,7 +13,9 @@ This demo allows you to light on/off an onboard LED connected to the IO13.
 
 First you must install Intel's mraa library:
 
-    opkg install libmraa
+    echo "src mraa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > /etc/opkg/mraa-upm.conf
+    opkg update
+    opkg install libmraa0
 
 Once the muzzley C++ lib is part of the Intel Dev Kit repository, run the following command:
 
