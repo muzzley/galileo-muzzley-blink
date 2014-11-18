@@ -1,4 +1,4 @@
-# muzzley Blink Demo
+# muzzley blink demo
 
 This repository demonstrates how [muzzley](https://www.muzzley.com) can be used on an Intel Galileo Gen1, Gen2 and Edison using C++ and Node.js. Once integrated, you'll be able to remotely control your board from anywhere.
 
