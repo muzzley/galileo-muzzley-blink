@@ -15,8 +15,6 @@ First you must clone this repository using the command
 
     git clone https://github.com/muzzley/galileo-muzzley-blink.git
 
-and enter the folder `cpp`.
-
 Then install Intel's mraa library:
 
     echo "src mraa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > /etc/opkg/mraa-upm.conf
@@ -27,10 +25,14 @@ Once the muzzley C++ lib is part of the Intel Dev Kit repository, run the follow
 
     opkg install muzzley-cpp-client
 
-Then you can compile the example with the following command:
+Enter the folder `cpp` and compile the example with the following command:
 
     g++ -std=c++0x -I/usr/include/muzzley muzzley_blink.cpp -o myapp -lmuzzley -lmraa -lpthread
 
-To run the demo, type:
+## Running the demo
+
+Run the following command
 
     ./myapp
+
+The `activityId` will be printed in your console. Insert it in your muzzley mobile app in order to pair with your board.

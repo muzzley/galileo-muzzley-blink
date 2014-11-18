@@ -13,8 +13,6 @@ First you must clone this repository using the command
 
     git clone https://github.com/muzzley/galileo-muzzley-blink.git
 
-and enter the folder `nodejs`.
-
 Then install Intel's mraa library:
 
     echo "src mraa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > /etc/opkg/mraa-upm.conf
@@ -25,6 +23,8 @@ Once the muzzley Node.js lib is part of the Intel Dev Kit repository, run the fo
 
     opkg install muzzley-client
 
-To run the demo, type:
+## Running the demo
+
+Enter the folder `nodejs` and type the following command
 
     node index.js
