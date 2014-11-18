@@ -53,14 +53,6 @@ static int iopin;
 mraa_result_t r = MRAA_SUCCESS;
 mraa_gpio_context gpio;
 
-
-void sig_handler(int signo) {
-  if (signo == SIGINT) {
-      printf("closing IO%d nicely\n", iopin);
-  }
-  exit(signo);
-}
-
 int main(int argc, char* argv[]) {
 
   iopin = DEFAULT_IOPIN;
@@ -79,8 +71,6 @@ int main(int argc, char* argv[]) {
   if (r != MRAA_SUCCESS) {
     mraa_result_print(r);
   }
-
-  signal(SIGINT, sig_handler);
 
   // Create the Muzzley client
   muzzley::Client _client;
