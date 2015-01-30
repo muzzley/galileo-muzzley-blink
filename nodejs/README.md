@@ -19,9 +19,9 @@ Then install Intel's mraa library:
     opkg update
     opkg install libmraa0
 
-Once the muzzley Node.js lib is part of the Intel Dev Kit repository, run the following command:
+Once the Intel MRAA lib is part of the Intel Dev Kit repository, run the following command inside the project's `nodejs` folder:
 
-    opkg install muzzley-client
+    npm install
 
 ## Running the demo
 
